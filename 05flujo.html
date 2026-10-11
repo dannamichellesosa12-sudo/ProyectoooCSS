@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Flujo normal y Display</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a href="index.html">Volver al menú</a>
+  <h1>Flujo normal y Display</h1>
+
+  <section>
+    <h2>Introducción</h2>
+    <p>El flujo normal coloca los elementos uno debajo de otro. Con <code>display</code> podemos cambiar su comportamiento.</p>
+  </section>
+
+  <section>
+    <h2>Ejemplos</h2>
+
+    <!-- Bloque -->
+    <div style="background: lightblue; display:block; padding:10px; margin:5px 0;">
+      Bloque
+    </div>
+    <p>Un elemento de bloque ocupa todo el ancho disponible y se coloca en una nueva línea.</p>
+
+    <!-- Inline -->
+    <p>
+      Texto antes <span style="background: yellow; display:inline;">Inline</span> texto después
+    </p>
+    <p>Un elemento en línea solo ocupa el espacio de su contenido y se coloca junto a otros.</p>
+
+    <!-- Inline-block -->
+    <p>
+      Texto antes 
+      <span style="background: pink; display:inline-block; width:120px; height:40px; text-align:center;">
+        Inline-block
+      </span> 
+      texto después
+    </p>
+    <p>Un elemento inline-block se comporta como en línea, pero permite definir ancho y alto.</p>
+
+    <!-- Flex -->
+    <div style="display:flex; gap:10px; justify-content:center; margin-top:15px;">
+      <div style="background: lightgreen; padding:10px;">Flex item 1</div>
+      <div style="background: lightgreen; padding:10px;">Flex item 2</div>
+    </div>
+    <p>Los elementos dentro de un contenedor flex se alinean y distribuyen según las reglas de flexbox.</p>
+  </section>
+
+  <section>
+    <h2>Video</h2>
+    <video controls width="300">
+      <source src="Videos/05Flujo.mp4" type="video/mp4">
+    </video>
+  </section>
+</body>
+</html>

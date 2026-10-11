@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a href="index.html">Volver al menú</a>
+  <h1>Grid</h1>
+
+  <section>
+    <h2>Introducción</h2>
+    <p>CSS Grid permite organizar elementos en filas y columnas de forma precisa.</p>
+  </section>
+
+  <section>
+    <h2>Ejemplos</h2>
+
+    <!-- Grid simple -->
+    <div class="grid">
+      <div class="caja">1 <br> (columna 1)</div>
+      <div class="caja">2 <br> (columna 2)</div>
+      <div class="caja">3 <br> (columna 3)</div>
+    </div>
+    <p>Grid con 3 columnas iguales</p><br>
+
+    <!-- Grid con filas -->
+    <div class="grid" style="grid-template-columns: 1fr 1fr;">
+      <div class="caja">A <br> (fila 1, col 1)</div>
+      <div class="caja">B <br> (fila 1, col 2)</div>
+      <div class="caja">C <br> (fila 2, col 1)</div>
+      <div class="caja">D <br> (fila 2, col 2)</div>
+    </div>
+    <p>Grid con 2 columnas y varias filas</p><br>
+
+    <!-- Grid con tamaños distintos -->
+    <div class="grid" style="grid-template-columns: 2fr 1fr;">
+      <div class="caja">Columna ancha</div>
+      <div class="caja">Columna angosta</div>
+    </div>
+    <p>Grid con columnas de distinto tamaño</p><br>
+
+    <!-- Grid con áreas -->
+    <div class="grid" style="grid-template-areas: 
+      'header header'
+      'menu main'
+      'footer footer';
+      grid-template-columns: 1fr 2fr;">
+      <div class="caja" style="grid-area:header;">Header</div>
+      <div class="caja" style="grid-area:menu;">Menu</div>
+      <div class="caja" style="grid-area:main;">Main</div>
+      <div class="caja" style="grid-area:footer;">Footer</div>
+    </div>
+    <p>Grid con áreas definidas</p><br>
+
+  </section>
+
+  <section>
+    <h2>Video</h2>
+    <video controls width="300">
+      <source src="Videos/08Grid.mp4" type="video/mp4">
+    </video>
+  </section>
+</body>
+</html>

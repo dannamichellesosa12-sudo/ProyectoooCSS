@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Posicionamiento</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <style>
+    .ejemplo {
+      width: 200px;
+      margin: 20px auto;
+      padding: 8px;
+      text-align: center;
+    }
+    .contenedor {
+      position: relative;
+      width: 250px;
+      height: 150px;
+      margin: 20px auto;
+      border: 1px dashed #aaa;
+    }
+    .absolute {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: pink;
+      width: 100px;
+      padding: 5px;
+    }
+    .fixed {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: orange;
+      width: 120px;
+      padding: 5px;
+      text-align: center;
+    }
+    /* Para que se note el sticky necesitas altura y scroll */
+    .espacio {
+      height: 600px;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html">Volver al menú</a>
+  <h1>Posicionamiento</h1>
+
+  <section>
+    <h2>Introducción</h2>
+    <p>CSS permite posicionar elementos de distintas formas.</p>
+  </section>
+
+  <section>
+    <h2>Ejemplos</h2>
+    <div class="ejemplo" style="position:static; background:lightblue;">
+      Static <br> (flujo normal)
+    </div><br>
+
+    <div style="position:relative; top:30px; left:30px; background:yellow; width:200px; margin:auto;">
+        Relative <br> (se movió 30px abajo y 30px a la derecha)
+    </div>
+
+
+    <div class="contenedor">
+      <div class="absolute">Absolute <br> (respecto al contenedor)</div>
+    </div><br>
+
+    <div class="ejemplo" style="position:sticky; top:0; background:green;">
+      Sticky <br> (se pega al hacer scroll)
+    </div><br>
+
+    <div class="espacio"></div> <!-- espacio para probar scroll -->
+
+    <div class="fixed">
+      Fixed <br> (siempre fijo en pantalla)
+    </div>
+  </section>
+
+  <section>
+    <h2>Video</h2>
+    <video controls width="300">
+      <source src="Videos/06Posicion.mp4" type="video/mp4">
+    </video>
+  </section>
+</body>
+</html>

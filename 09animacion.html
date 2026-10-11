@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Animaciones</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <style>
+    @keyframes mover {
+      from { transform: translateX(0); }
+      to { transform: translateX(100px); }
+    }
+    .animada {
+      width:50px; height:50px; background:red;
+      animation:mover 2s infinite alternate;
+      margin:auto;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html">Volver al menú</a>
+  <h1>Animaciones</h1>
+
+  <section>
+    <h2>Introducción</h2>
+    <p>Las animaciones permiten mover o cambiar elementos con efectos.</p>
+  </section>
+
+  <section>
+    <h2>Ejemplos</h2>
+    <div class="animada"></div><br>
+    <div style="width:50px; height:50px; background:blue; animation:mover 3s infinite alternate;">Animación azul</div><br>
+    <div style="width:50px; height:50px; background:green; animation:mover 1s infinite alternate;">Animación rápida</div><br>
+    <div style="width:50px; height:50px; background:orange; animation:mover 4s infinite alternate;">Animación lenta</div><br>
+    <div style="width:50px; height:50px; background:purple; animation:mover 2s infinite alternate;">Animación púrpura</div>
+  </section>
+
+  <section>
+    <h2>Video</h2>
+    <video controls width="300">
+      <source src="Videos/09Animacion.mp4" type="video/mp4">
+    </video>
+  </section>
+</body>
+</html>

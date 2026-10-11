@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <style>
+    .caja {
+      background: lightblue;
+      padding: 10px;
+      margin: 5px;
+      text-align: center;
+    }
+    .contenedor {
+      display: flex;
+      gap: 10px;
+      margin: 20px auto;
+      width: 80%;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html">Volver al menú</a>
+  <h1>Flexbox</h1>
+
+  <section>
+    <h2>Introducción</h2>
+    <p>Flexbox organiza elementos en filas o columnas y facilita su alineación.</p>
+  </section>
+
+  <section>
+    <h2>Ejemplos</h2>
+
+    <!-- Fila normal -->
+    <div class="contenedor" style="justify-content:flex-start;">
+      <div class="caja">1</div>
+      <div class="caja">2</div>
+      <div class="caja">3</div>
+    </div>
+    <p>Fila normal (display:flex)</p><br>
+
+    <!-- Centrado -->
+    <div class="contenedor" style="justify-content:center;">
+      <div class="caja">Centro</div>
+    </div>
+    <p>Justify-content:center (centrado horizontal)</p><br>
+
+    <!-- Espacio entre -->
+    <div class="contenedor" style="justify-content:space-between;">
+      <div class="caja">A</div>
+      <div class="caja">B</div>
+    </div>
+    <p>Justify-content:space-between (espacio entre elementos)</p><br>
+
+    <!-- Vertical -->
+    <div class="contenedor" style="align-items:center; height:100px; border:1px dashed #aaa;">
+      <div class="caja">Vertical</div>
+    </div>
+    <p>Align-items:center (alineación vertical)</p><br>
+
+    <!-- Columna -->
+    <div class="contenedor" style="flex-direction:column; align-items:center;">
+      <div class="caja">Columna 1</div>
+      <div class="caja">Columna 2</div>
+    </div>
+    <p>Flex-direction:column (elementos en columna)</p><br>
+
+  </section>
+
+  <section>
+    <h2>Video</h2>
+    <video controls width="300">
+      <source src="Videos/07Flexbox.mp4" type="video/mp4">
+    </video>
+  </section>
+</body>
+</html>
