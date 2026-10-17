@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+
+    <title>BOOSTRAP</title>
+</head>
+<body>
+    <h1>BOOTSTRAP</h1>
+    <hr>
+    <h2 class="text-center">BOTONES</h2>
+    <div class="d-flex justify-content-around w-75 mx-auto">
+        <button class="btn-solid theme-danger ">BOTON</button>
+        <button class="btn-outline theme-success">BOTON</button>
+        <button class="btn-subtle theme-warning">BOTON</button>
+        <button class="btn-text theme-accent">BOTON</button>
+    </div>
+    <br><br><br>
+    <h2 class="text-center">TABLA</h2>
+    <table class="table table-hover table-striped table-bordered text-center w-75 mx-auto">
+        <tr class="theme-inverse">
+            <td>a</td>
+            <td>a</td>
+            <td>a</td>
+            <td>a</td>
+        </tr>
+        <tr class="theme-warning">
+            <td>a</td>
+            <td>a</td>
+            <td>a</td>
+            <td>a</td>
+        </tr>
+        <tr class="theme-info">
+            <td>a</td>
+            <td>a</td>
+            <td>a</td>
+            <td>a</td>
+        </tr>
+        <tr class="theme-success">
+            <td>a</td>
+            <td>a</td>
+            <td>a</td>
+            <td>a</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <h2 class="text-center">CARRUSEL</h2>
+    <div id="carouselExampleFade" class="carousel carousel-fade w-50 mx-auto" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagenes/mosca.jfif" class="d-block w-100 rounded-5" alt="...">
+            </div>
+            <div class="carousel-item ">
+                <img src="imagenes/mosca.jpg" class="d-block w-100 rounded-5" alt="...">
+            </div>
+            <div class="carousel-item ">
+                <img src="imagenes/mosca.jpg" class="d-block w-100 rounded-5" alt="...">
+            </div>
+            <div class="carousel-item ">
+                <img src="imagenes/mosca.jpg" class="d-block w-100 rounded-5" alt="...">
+            </div>
+        </div>
+        <div>
+            <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-icon-prev" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-icon-next" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div>
+        <details class="accordion-item" name="accordionExample">
+            <summary class="accordion-header">
+                TRES
+                <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+            </summary>
+            <div class="accordion-body">
+                <img src="img/fondo3.jpg" class="d-block w-100 rounded-5" alt="...">
+            </div>
+        </details>
+    </div>
+
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+
+    <div class="card " style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h4 class="card-title">AMERICA</h4>
+            <p class="card-text">CAMPEON CLAUSURA 2023</p>
+        </div>
+        <div class="card-body flex-row gap-4">
+            <img src="img/fondo4.jpg" class="card-img-top" alt="...">
+        </div>
+    </div>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+</body>
+</html>
